@@ -16,5 +16,5 @@
 
 add to the list if you want!
 
-[https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/cheat-sheet/)
-[https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf](https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf)
+- [https://docs.emmet.io/cheat-sheet/](https://docs.emmet.io/cheat-sheet/)
+- [https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf](https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf)
