@@ -12,6 +12,8 @@
 8. type `git branch -M main`
 9. type `git push -u origin main`
 
+**TRY `gh auth login` IF HAVING ISSUES**
+
 ## helpful links
 
 add to the list if you want!
