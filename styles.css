@@ -1,0 +1,106 @@
+/* :root is used for setting variables */
+:root {
+  /* sets variable value to 0.5rem */
+  --variableRem: 0.5rem;
+  /* sets variable equal to on above*/
+  --border-inner: var(--variableRem);
+  /* wee calculation to nest border-radii nicely :) */
+  --border-outer: calc(var(--border-inner) + var(--variableRem));
+}
+
+/* css reset, clean slate so everything does what YOU want it to */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* uncomment below for alignment check */
+  /* border: solid red 0.1px; */
+}
+
+/* margin of 1rem around the whole page */
+body {
+  margin: 1rem;
+}
+
+/* use for diagnostics */
+.border {
+  border: solid red 1px;
+}
+
+header {
+  /* flex to put things side by side */
+  display: flex;
+  /* aligns items vertically inside container */
+  align-items: center;
+  /* 1rem gap between items */
+  gap: 1rem;
+}
+
+/* rounds corners, square -> circle */
+.logo {
+  border-radius: 99rem;
+}
+
+nav {
+  display: flex;
+  /* aligns items horizontally with even spacing all around item */
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+a,
+/* a:visited targets visited links, usually they are purple */
+a:visited {
+  /* resets to default, black in this case */
+  color: unset;
+  /* removes underline */
+  text-decoration: none;
+  /* makes text bold */
+  font-weight: bold;
+}
+
+/* targets <a> when hovered with mouse */
+a:hover {
+  /* underline when hovered */
+  text-decoration: underline;
+}
+
+.sectionHeader {
+  /* two values, first is top & bottom, second is left & right */
+  margin: 1rem 0rem;
+}
+
+.cardSection {
+  /* grid is for aligning in two axis */
+  display: grid;
+  /* sorts items into two even columns */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: var(--variableRem);
+  display: flex;
+  /* changes flex-direction to vertical */
+  flex-direction: column;
+  /* using flex so we can use gap tp evenly space everything */
+  gap: 1rem;
+  border-radius: var(--border-outer);
+}
+
+.cardSecondaries {
+  display: flex;
+  /* places items hard against outside of container */
+  justify-content: space-between;
+}
+
+.cardImage {
+  border-radius: var(--border-inner);
+}
+
+footer {
+  /* two values, first is top & bottom, second is left & right */
+  padding: 1rem 0rem;
+}
