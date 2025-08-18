@@ -14,6 +14,10 @@
 
 **TRY `gh auth login` IF HAVING ISSUES**
 
+## vs code extensions
+
+- Live Server (ritwickdey.LiveServer)
+
 ## helpful links
 
 add to the list if you want!

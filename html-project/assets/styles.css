@@ -6,6 +6,8 @@
   --border-inner: var(--variableRem);
   /* wee calculation to nest border-radii nicely :) */
   --border-outer: calc(var(--border-inner) + var(--variableRem));
+  --light-grey: #f2f2f2;
+  --dark-grey: #525252;
 }
 
 /* css reset, clean slate so everything does what YOU want it to */
@@ -16,6 +18,7 @@
   font-family: sans-serif;
   /* uncomment below for alignment check */
   /* border: solid red 0.1px; */
+  color: var(--dark-grey);
 }
 
 /* margin of 1rem around the whole page */
@@ -69,6 +72,9 @@ a:hover {
 .sectionHeader {
   /* two values, first is top & bottom, second is left & right */
   margin: 1rem 0rem;
+  padding: 1rem 0rem;
+  background-color: var(--light-grey);
+  border-radius: calc(var(--variableRem) * 2);
 }
 
 .cardSection {
@@ -80,7 +86,7 @@ a:hover {
 }
 
 .card {
-  background-color: #f2f2f2;
+  background-color: var(--light-grey);
   padding: var(--variableRem);
   display: flex;
   /* changes flex-direction to vertical */
@@ -102,5 +108,10 @@ a:hover {
 
 footer {
   /* two values, first is top & bottom, second is left & right */
-  padding: 1rem 0rem;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  background-color: var(--light-grey);
+}
+
+@media screen and (min-width: 10rem) {
 }
