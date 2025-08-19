@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* border: solid 0.1rem red; */
+}
+
+body {
+  background-image: url('./images/spencer-plouzek-GwEQzamy4MA-unsplash.jpg');
+  background-size: cover;
+}
+
+.myHeader {
+  padding: 1rem 0rem;
+  background-color: #525252;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header > h1.myH1 {
+  text-align: center;
+  color: #f2f2f2;
+}
+
+div.sub-header {
+  padding: 0.5rem;
+  /* background-color: #f2f2f2; */
+  backdrop-filter: blur(10px);
+  color: #f2f2f2;
+}
+
+.gallery {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+
+.section-class {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
